@@ -237,8 +237,8 @@ function EnhancedTableToolbar(props: EnhancedTableToolbarProps) {
                     Products
                 </Typography>
             )}
-            <Box>
-                <Button variant="contained" endIcon={<ControlPointIcon />}>
+            <Box display='flex'>
+                <Button variant="contained" sx={{whiteSpace: 'nowrap', mr: '2rem'}} endIcon={<ControlPointIcon />}>
                     Add Product
                 </Button>
                 {numSelected > 0 ? (
